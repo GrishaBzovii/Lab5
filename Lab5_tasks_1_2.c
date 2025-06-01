@@ -67,8 +67,12 @@ int main() {
             printf("0. Повернутись у головне меню.\n");
             printf("Ваш вибір: ");
             scanf("%d", &loop_choice);
+
+            if (loop_choice == 0) {
+                printf("Повернення у головне меню.\n");
+            }
             
-            if (loop_choice == 1) {
+            else if (loop_choice == 1) {
                 printf ("Варіант A\n");
             int n; // змінна для розміру масиву
             printf("Введіть розмір масиву n: "); 
@@ -162,10 +166,7 @@ int main() {
             printf("Неправильний вибір. Спробуйте ще раз.\n");
         }
     }
-        else if (3 == 0) {
-            printf("Вихід з програми.\n");
-            break; // Вихід з головного циклу при виборі 0
-        }
+        
         else if (choice == 0) {
             printf("Вихід з програми.\n");
             break;
